@@ -22,9 +22,15 @@ export default{
 
 <template>
   
+  <!-- ? Quale delle due versioni è più corretta ? -->
+
   <ul v-if="emails.length == 10">
     <li v-for="email in emails"><a href="#">{{ email }}</a></li> 
   </ul>
+
+  <!-- <ul>
+    <li v-if="emails.length == 10" v-for="email in emails"><a href="#">{{ email }}</a></li> 
+  </ul> -->
 
 </template>
 
